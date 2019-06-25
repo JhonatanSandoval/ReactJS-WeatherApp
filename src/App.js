@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import WeatherLocation from './components/WeatherLocation/index';
 
-function App() {
-    return (
-        <div className='App'>
-            Weather app :D
-            <WeatherLocation />
-        </div>
-    );
+export default class App extends Component {
+    render() {
+        return (
+            <div className='App'>
+                Weather app :D
+                <WeatherLocation />
+            </div>
+        );
+    }
 }
-
-export default App;
